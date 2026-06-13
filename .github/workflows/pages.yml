@@ -41,9 +41,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Install dependencies
-        run: |
-          cd themes/PaperMod && npm install && cd ../..
+
       - name: Build with Hugo
         env:
           HUGO_ENVIRONMENT: production
