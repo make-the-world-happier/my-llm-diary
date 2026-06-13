@@ -3,3 +3,10 @@ public/
 
 # Hugo build lock file
 .hugo_build.lock
+
+# Hugo environment-specific config files
+hugo.*.toml
+
+# Environment variables
+.env
+.env.*

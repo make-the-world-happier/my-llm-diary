@@ -1,4 +1,3 @@
-baseURL = 'http://localhost:1313/'
 languageCode = 'ko-kr'
 defaultContentLanguage = 'ko'
 title = 'LLM 다이어리'
@@ -28,6 +27,11 @@ timeZone = 'Asia/Seoul'
     name = 'Wiki'
     pageRef = 'wiki'
     weight = 20
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    pageRef = 'about'
+    weight = 30
 
 [markup.goldmark.renderer]
   unsafe = true

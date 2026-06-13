@@ -5,11 +5,13 @@
 ## 폴더 구조
 - `content/posts/` - 블로그 포스트 (Markdown)
 - `content/wiki/` - LLM Wiki (Markdown)
-  - `troubleshooting/` - 오류 해결
+  - `errors/` - 오류 해결
   - `decisions/` - 아키텍처 결정
   - `tools/` - 도구 사용법
   - `projects/` - 프로젝트별
-- `hugo.toml` - Hugo 설정
+- `hugo.toml` - Hugo 기본 설정
+- `hugo.local.toml` - 로컬 개발 환경 설정
+- `hugo.prod.toml` - 프로덕션 환경 설정
 - `themes/PaperMod/` - 테마 (git submodule)
 
 ## 콘텐츠 작성 규칙
