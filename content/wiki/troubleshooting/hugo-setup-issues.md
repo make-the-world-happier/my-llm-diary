@@ -63,7 +63,7 @@ ERROR the "published" front matter field is not a parsable date
 
 ---
 
-## 문제 4: `{{< tag >}}` shortcode not found
+## 문제 4: `tag` shortcode not found
 
 ### 증상
 ```
