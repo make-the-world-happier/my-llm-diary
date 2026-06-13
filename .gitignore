@@ -1,6 +1,9 @@
 # Hugo public folder
 public/
 
+# Hugo binary
+hugo
+
 # Hugo build lock file
 .hugo_build.lock
 
