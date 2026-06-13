@@ -1,0 +1,33 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'ko-kr'
+defaultContentLanguage = 'ko'
+title = 'LLM 다이어리'
+theme = 'PaperMod'
+timeZone = 'Asia/Seoul'
+
+[params]
+  env = 'production'
+  description = 'LLM 과 나눈 대화와 지식 위키'
+  defaultTheme = 'dark'
+  showToc = true
+  tocOpen = false
+  mainSections = ['posts']
+
+[params.homeInfoParams]
+  Title = 'LLM 다이어리'
+  Content = 'LLM 과 나눈 대화, 브레인스토밍, 그리고 지식 위키'
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    pageRef = 'posts'
+    weight = 10
+  [[menu.main]]
+    identifier = 'wiki'
+    name = 'Wiki'
+    pageRef = 'wiki'
+    weight = 20
+
+[markup.goldmark.renderer]
+  unsafe = true
