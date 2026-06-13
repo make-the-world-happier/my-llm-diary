@@ -22,7 +22,7 @@ date: 2026-06-14T00:00:00+09:00
 ###Wiki 구조
 ```
 content/wiki/
-├── errors/   # 오류 해결
+├── troubleshooting/   # 오류 해결
 ├── decisions/# 아키텍처 결정
 ├── tools/    # 도구 사용법
 └── projects/ # 프로젝트별

@@ -5,7 +5,7 @@
 ## 폴더 구조
 - `content/posts/` - 블로그 포스트 (Markdown)
 - `content/wiki/` - LLM Wiki (Markdown)
-  - `errors/` - 오류 해결
+  - `troubleshooting/` - 오류 해결
   - `decisions/` - 아키텍처 결정
   - `tools/` - 도구 사용법
   - `projects/` - 프로젝트별
@@ -25,3 +25,15 @@
 
 ## Git 작업
 - 변경 사항 후: `git add . && git commit -m "메시지" && git push`
+
+## ⚠️ 보안 지침 (반드시 준수)
+
+### 푸시 전 필수 확인
+1. **개인정보, 토큰, API 키, 비밀번호, 시크릿 키**가 파일에 포함되지 않았는지 철저히 확인
+2. `.env`, `.git/config`, `hugo.toml` 등 설정 파일에 민감한 정보가 없는지 반드시 검토
+3. `git diff` 로 변경 사항을 미리 확인한 후 commit
+
+### 푸시 규칙
+- **푸시는 사용자의 명시적인 지시가 있을 때만 실행**
+- `git push` 명령은 사용자가 "푸시해"라고 지시할 때까지 절대 자동으로 실행하지 않음
+- 커밋만 하고 푸시는 대기: `git add . && git commit -m "메시지"` 후 사용자의 지시 대기
