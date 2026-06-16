@@ -4,22 +4,19 @@ title: "Wiki Index"
 
 # Wiki Index
 
-이 파일은 Wiki 의 모든 항목을 인덱싱하여 LLM 이 빠르게 검색할 수 있도록 합니다.
+이 파일은 Wiki 의 모든 항목을 인덱싱하여 LLM 이 프로젝트의 맥락과 규칙을 빠르게 파악하고 검색할 수 있도록 돕는 지도 역할을 합니다.
 
-## 구조
-- `content/wiki/` 폴더 내 모든 Markdown 파일의 메타데이터
+## 운영 철학
+본 위키는 단순한 '해결 로그'가 아닌, LLM이 향후 유사한 문제에 직면했을 때 추론의 근거로 사용할 수 있는 **패턴(Pattern), 전략(Strategy), 규칙(Rule)** 중심으로 관리합니다.
 
 ## 항목 목록
 | 파일 | 제목 | 태그 | 요약 |
 |------|------|------|------|
-| `errors/hugo-setup-issues.md` | Hugo 초기 설정 문제 | hugo, troubleshooting, papermod | Hugo + PaperMod 설정 시 발생한 6 가지 문제와 해결 방법 |
-| `tools/docker-cheatsheet.md` | Docker 기본 명령어 모음 | docker, cheatsheet | Docker 컨테이너, 이미지, 볼륨, 네트워크 관리 명령어 |
-| `projects/brain-storming-with-ai.md` | Brain Storming with AI | project, ai, llm | 로컬 LLM 과 브레인스토밍 프로젝트 개요 |
-| `decisions/hugo-environment-config.md` | Hugo 환경별 설정 | hugo, configuration, environment | baseURL 을 환경별 설정 파일 (hugo.local.toml, hugo.prod.toml) 로 분리하는 설정 아키텍처 |
-| `decisions/wiki-folder-structure.md` | Wiki 폴더 구조 | wiki, structure, organization | Wiki 폴더 구조 (errors/, decisions/, tools/, projects/) 변경 결정 |
-| `decisions/about-page-menu.md` | About 페이지 메뉴 추가 | ui, menu, navigation | Hugo 메뉴에 About 페이지를 추가하는 UI/UX 개선 결정 |
-| `tools/hugo-version-management.md` | Hugo 버전 관리 | hugo, version, update | Hugo 버전 업데이트 방법과 GitHub Actions 연동 가이드 |
-| `tools/gitignore-guide.md` | .gitignore 가이드 | git, security, configuration | 민감한 파일 (.env, 환경별 설정, Hugo binary) 제외 가이드 |
+| `errors/hugo-setup-issues.md` | PaperMod 테마 동작 원리 및 주의사항 | hugo, papermod, pattern | PaperMod 테마의 기본 가정과 설정 불일치 패턴 및 해결 원칙 |
+| `projects/brain-storming-with-ai.md` | Brain Storming with AI | project, ai, llm | 프로젝트의 목적, 철학 및 전체 지식 구조 정의 |
+| `decisions/hugo-environment-config.md` | Hugo 환경별 설정 | hugo, configuration, environment | baseURL 등 환경별 설정을 분리하여 관리하는 전략 |
+| `decisions/wiki-folder-structure.md` | Wiki 폴더 구조 | wiki, structure, organization | 지식 관리의 일관성을 위한 위키 폴더 구조 정의 및 운영 규칙 |
+| `tools/hugo-version-management.md` | Hugo 버전 관리 | hugo, version, update | Hugo 버전 업데이트 및 CI/CD 연동 프로세스 |
 
 ## 검색 팁
 - LLM 이 grep 으로 검색할 때 유용합니다: `grep -r "키워드" content/wiki/`
